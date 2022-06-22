@@ -12,7 +12,6 @@ const Book = db.books
 const addBook = async (req, res) => {
     console.log(req.body);
     let info = {
-        coverPage: req.file.path,
         bookTitle: req.body.bookTitle,
         costINR: req.body.costINR,
         description: req.body.description,
