@@ -49,6 +49,20 @@ const updateBook = async (req, res) => {
     let id = req.params.id
     const book = await Book.update(req.body, { where: { id: id }})
     res.status(200).send(book)
+
+    let info = {
+        bookTitle: req.body.bookTitle,
+        costINR: req.body.costINR,
+        description: req.body.description,
+        softcopyAvailable: req.body.softcopyAvailable ? req.body.softcopyAvailable : false,
+        publishYear: req.body.publishYear,
+        edition: req.body.edition
+    }
+
+    const book = await Book.create(info)
+    res.status(200).send(book)
+    console.log(book)
+
 }
 
 //DELETE book
