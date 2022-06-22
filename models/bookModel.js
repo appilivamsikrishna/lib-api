@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
 
     const Book = sequelize.define("book", {
-        coverpage: {
+        coverPage: {
             type: DataTypes.STRING
         },
         bookTitle: {

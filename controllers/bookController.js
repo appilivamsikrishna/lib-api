@@ -10,8 +10,9 @@ const Book = db.books
 //POST create book
 
 const addBook = async (req, res) => {
+    console.log(req.body);
     let info = {
-        coverpage: req.file.path,
+        coverPage: req.file.path,
         bookTitle: req.body.bookTitle,
         costINR: req.body.costINR,
         description: req.body.description,
