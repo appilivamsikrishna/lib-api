@@ -85,3 +85,39 @@ in chrome browser,  use following URL to view the database
 http://localhost/phpmyadmin/index.php?route=/sql&db=library_db&table=books
 
 ----------
+
+
+To Update a book
+
+PUT
+
+http://localhost:8080/api/books/:id
+
+
+
+---------
+
+To delete a book
+
+DELETE
+
+http://localhost:8080/api/books/:id
+
+
+----------
+
+
+to check if pdf version of book available, with book id
+
+GET 
+
+http://localhost:8080/api/books/softcopyAvailable
+
+
+
+
+
+
+
+
+-----
