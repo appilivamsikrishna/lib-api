@@ -1,7 +1,7 @@
 const request = require('../commonTests');
 const fs = require('fs'); //file system
 
-//const data = require('data.json'); //data.json containing the global variables
+//const data = require('data.json'); //data.json containing the global variables ******
 
 const data = require('../data.json'); //data.json containing the global variables
 
@@ -56,7 +56,7 @@ describe("DELETE user details", () =>{
 
         afterAll(function (){
             console.log("user is deleted!!")
-            fs.unlinkSync('data.json'); //remove data.json after all tests are run
+            //fs.unlinkSync('data.json');   //remove data.json after all tests are run    **************
         });
     }
 

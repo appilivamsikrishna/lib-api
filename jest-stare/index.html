@@ -89,7 +89,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">1 passed, 2 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">2 passed, 2 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -97,7 +97,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">2 passed, 2 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">4 passed, 4 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -125,16 +125,16 @@
 }</div>
         <div id="accordion">
             <div class="d-none" id="test-results">{
-  &quot;numFailedTestSuites&quot;: 1,
+  &quot;numFailedTestSuites&quot;: 0,
   &quot;numFailedTests&quot;: 0,
-  &quot;numPassedTestSuites&quot;: 1,
-  &quot;numPassedTests&quot;: 2,
+  &quot;numPassedTestSuites&quot;: 2,
+  &quot;numPassedTests&quot;: 4,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
-  &quot;numRuntimeErrorTestSuites&quot;: 1,
+  &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 2,
-  &quot;numTotalTests&quot;: 2,
+  &quot;numTotalTests&quot;: 4,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -152,21 +152,19 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1656337711416,
+  &quot;startTime&quot;: 1656338825147,
   &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
-      &quot;displayName&quot;: &quot;&quot;,
-      &quot;failureMessage&quot;: &quot;  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Cannot find module &#39;..&#x2F;data.json&#39; from &#39;putAndDelete.test.js&#39;\n\n    \u001b[0m \u001b[90m 4 |\u001b[39m \u001b[90m&#x2F;&#x2F;const data &#x3D; require(&#39;data.json&#39;); &#x2F;&#x2F;data.json containing the global variables\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 5 |\u001b[39m\u001b[0m\n    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mconst\u001b[39m data \u001b[33m&#x3D;\u001b[39m require(\u001b[32m&#39;..&#x2F;data.json&#39;\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m&#x2F;&#x2F;data.json containing the global variables\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m   |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 7 |\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 8 |\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 9 |\u001b[39m \u001b[90m&#x2F;&#x2F;Update user data\u001b[39m\u001b[0m\n\n      \u001b[2mat Resolver.resolveModule (\u001b[22mnode_modules&#x2F;@jest&#x2F;core&#x2F;node_modules&#x2F;jest-resolve&#x2F;build&#x2F;index.js\u001b[2m:299:11)\u001b[22m\n      \u001b[2mat Object.require (\u001b[22m\u001b[0m\u001b[36m__test__&#x2F;putAndDelete.test.js\u001b[39m\u001b[0m\u001b[2m:6:14)\u001b[22m\n&quot;,
       &quot;leaks&quot;: false,
       &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 2,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 0,
-        &quot;start&quot;: 0
+        &quot;end&quot;: 1656338827091,
+        &quot;start&quot;: 1656338825600
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -174,22 +172,38 @@
         &quot;fileDeleted&quot;: false,
         &quot;matched&quot;: 0,
         &quot;unchecked&quot;: 0,
-        &quot;uncheckedKeys&quot;: [],
         &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0
-      },
-      &quot;testExecError&quot;: {
-        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
-        &quot;hint&quot;: &quot;&quot;,
-        &quot;requireStack&quot;: [
-          &quot;&#x2F;Users&#x2F;safe&#x2F;Desktop&#x2F;lib-api&#x2F;__test__&#x2F;putAndDelete.test.js&quot;
-        ],
-        &quot;siblingWithSimilarExtensionFound&quot;: false,
-        &quot;moduleName&quot;: &quot;..&#x2F;data.json&quot;,
-        &quot;_originalMessage&quot;: &quot;Cannot find module &#39;..&#x2F;data.json&#39; from &#39;putAndDelete.test.js&#39;&quot;
+        &quot;updated&quot;: 0,
+        &quot;uncheckedKeys&quot;: []
       },
       &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;safe&#x2F;Desktop&#x2F;lib-api&#x2F;__test__&#x2F;putAndDelete.test.js&quot;,
-      &quot;testResults&quot;: []
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;PUT user details&quot;
+          ],
+          &quot;duration&quot;: 645,
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;PUT user details Update user now&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;Update user now&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;DELETE user details&quot;
+          ],
+          &quot;duration&quot;: 501,
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;DELETE user details Delete request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;Delete request&quot;
+        }
+      ],
+      &quot;failureMessage&quot;: null
     },
     {
       &quot;leaks&quot;: false,
@@ -199,8 +213,8 @@
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1656337713733,
-        &quot;start&quot;: 1656337712906
+        &quot;end&quot;: 1656338827873,
+        &quot;start&quot;: 1656338827124
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -218,7 +232,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;POST request&quot;
           ],
-          &quot;duration&quot;: 512,
+          &quot;duration&quot;: 477,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;POST request Create user data&quot;,
           &quot;location&quot;: null,
@@ -230,7 +244,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;GET all user details&quot;
           ],
-          &quot;duration&quot;: 129,
+          &quot;duration&quot;: 105,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;GET all user details GET user output&quot;,
           &quot;location&quot;: null,
@@ -281,9 +295,9 @@
       &quot;fnMap&quot;: {},
       &quot;branchMap&quot;: {},
       &quot;s&quot;: {
-        &quot;0&quot;: 1,
-        &quot;1&quot;: 1,
-        &quot;2&quot;: 1
+        &quot;0&quot;: 2,
+        &quot;1&quot;: 2,
+        &quot;2&quot;: 2
       },
       &quot;f&quot;: {},
       &quot;b&quot;: {},
