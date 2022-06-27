@@ -1,0 +1,168 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 2,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 1,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 2,
+  "numTotalTests": 2,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1656337711416,
+  "success": false,
+  "testResults": [
+    {
+      "displayName": "",
+      "failureMessage": "  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Cannot find module '../data.json' from 'putAndDelete.test.js'\n\n    \u001b[0m \u001b[90m 4 |\u001b[39m \u001b[90m//const data = require('data.json'); //data.json containing the global variables\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 5 |\u001b[39m\u001b[0m\n    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m require(\u001b[32m'../data.json'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m//data.json containing the global variables\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m   |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 7 |\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 8 |\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 9 |\u001b[39m \u001b[90m//Update user data\u001b[39m\u001b[0m\n\n      \u001b[2mat Resolver.resolveModule (\u001b[22mnode_modules/@jest/core/node_modules/jest-resolve/build/index.js\u001b[2m:299:11)\u001b[22m\n      \u001b[2mat Object.require (\u001b[22m\u001b[0m\u001b[36m__test__/putAndDelete.test.js\u001b[39m\u001b[0m\u001b[2m:6:14)\u001b[22m\n",
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 0,
+        "start": 0
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testExecError": {
+        "code": "MODULE_NOT_FOUND",
+        "hint": "",
+        "requireStack": [
+          "/Users/safe/Desktop/lib-api/__test__/putAndDelete.test.js"
+        ],
+        "siblingWithSimilarExtensionFound": false,
+        "moduleName": "../data.json",
+        "_originalMessage": "Cannot find module '../data.json' from 'putAndDelete.test.js'"
+      },
+      "testFilePath": "/Users/safe/Desktop/lib-api/__test__/putAndDelete.test.js",
+      "testResults": []
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1656337713733,
+        "start": 1656337712906
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "/Users/safe/Desktop/lib-api/__test__/postAndGet.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "POST request"
+          ],
+          "duration": 512,
+          "failureMessages": [],
+          "fullName": "POST request Create user data",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Create user data"
+        },
+        {
+          "ancestorTitles": [
+            "GET all user details"
+          ],
+          "duration": 129,
+          "failureMessages": [],
+          "fullName": "GET all user details GET user output",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "GET user output"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false,
+  "coverageMap": {
+    "/Users/safe/Desktop/lib-api/commonTests.js": {
+      "path": "/Users/safe/Desktop/lib-api/commonTests.js",
+      "statementMap": {
+        "0": {
+          "start": {
+            "line": 1,
+            "column": 16
+          },
+          "end": {
+            "line": 1,
+            "column": 36
+          }
+        },
+        "1": {
+          "start": {
+            "line": 2,
+            "column": 16
+          },
+          "end": {
+            "line": 2,
+            "column": 47
+          }
+        },
+        "2": {
+          "start": {
+            "line": 14,
+            "column": 0
+          },
+          "end": {
+            "line": 18,
+            "column": 1
+          }
+        }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "f": {},
+      "b": {},
+      "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+      "hash": "41218212eca898320bca20eb5850cf6e6657f934"
+    }
+  }
+}

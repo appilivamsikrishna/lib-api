@@ -117,7 +117,14 @@ http://localhost:8080/api/books/softcopyAvailable
 
 
 
+use command :   npm test
 
+ to test and see results
 
 
 -----
+
+
+jest stare :  lib-api/jest-stare/index.html
+
+code coverage : lib-api/coverage/lcov-report/index.html
