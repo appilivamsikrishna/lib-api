@@ -123,3 +123,8 @@ use command :   npm test
 
 
 -----
+
+
+jest stare :  lib-api/jest-stare/index.html
+
+code coverage : lib-api/coverage/lcov-report/index.html
