@@ -117,7 +117,9 @@ http://localhost:8080/api/books/softcopyAvailable
 
 
 
+use command :   npm test
 
+ to test and see results
 
 
 -----

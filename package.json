@@ -3,8 +3,20 @@
   "version": "2.7.9",
   "description": "api for books",
   "main": "server.js",
+  "jest": {
+    "verbose": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_TLS_REJECT_UNAUTHORIZED=0 jest --reporters default jest-stare --coverage --detectOpenHandles --runInBand --testTimeout=60000",
+    "test:watch": "jest --verbose --watchAll"
   },
   "keywords": [
     "node",
@@ -17,9 +29,15 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "jest": "^25.5.4",
+    "jest-serial-runner": "^1.1.0",
+    "jest-stare": "^2.0.1",
     "multer": "^1.4.3",
     "mysql2": "^2.3.2",
     "sequelize": "^6.8.0",
     "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "supertest": "^6.2.3"
   }
 }
